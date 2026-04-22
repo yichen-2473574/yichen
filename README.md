@@ -1,4 +1,4 @@
-# Automated Financial Ratio Analysis Tool Using Python and WRDS Data(Demonstration cases: Walmart and Costco, 2020–2024)
+# A Python Tool for Automated Financial Ratio Analysis Using WRDS Compustat Data(Demonstration cases: Walmart and Costco, 2020–2024)
 
 ## 1.Problem and User
 This project develops a reusable Python tool that retrieves financial data from WRDS Compustat and calculates five key financial ratios for any retail company. The tool is designed for beginner-level financial analysts and retail investors who want a simple, automated way to compare liquidity and profitability across companies. To demonstrate the tool's functionality, Walmart and Costco are used as case studies for the 2020–2024 period.
