@@ -1,7 +1,8 @@
-# Financial Ratio Analysis of Walmart and Costco (2020–2024)
+# Automated Financial Ratio Analysis Tool Using Python and WRDS Data(Demonstration cases: Walmart and Costco, 2020–2024)
 
 ## 1.Problem and User
-This project compares the financial performance of Walmart and Costco from 2020 to 2024 using key financial ratios. It is designed for retail investers who want a simple company-level comparison of liquidity and profitability based on annual financial statement data.
+This project develops a reusable Python tool that retrieves financial data from WRDS Compustat and calculates five key financial ratios for any retail company. The tool is designed for beginner-level financial analysts and retail investors who want a simple, automated way to compare liquidity and profitability across companies. To demonstrate the tool's functionality, Walmart and Costco are used as case studies for the 2020–2024 period.
+
 
 ## 2.Data
 ### 2.1Source
@@ -16,6 +17,7 @@ This project compares the financial performance of Walmart and Costco from 2020 
 
 
 **Companies included:**
+For this demonstration, the tool is applied to:
 - Walmart (WMT)
 - Costco (COST)
 
@@ -46,7 +48,7 @@ This project compares the financial performance of Walmart and Costco from 2020 
 **The main Python steps in this project are:**
 - Connect to WRDS using a personal WRDS account.
 - Check available libraries and Compustat tables.
-- Retrieve company identifiers for Walmart and Costco.
+- Retrieve company identifiers (e.g., for demonstration: Walmart and Costco).
 - Download annual financial statement data from Compustat for 2020–2024.
 - Convert dates and sort the dataset by company and fiscal year.
 - Check missing values and possible zero denominators before ratio calculation.
@@ -55,12 +57,9 @@ This project compares the financial performance of Walmart and Costco from 2020 
 - Export the final table to Excel.
 - Plot each ratio over time for Walmart and Costco.
 ## 4. Key Findings
--Walmart and Costco can be directly compared using the same set of liquidity and profitability ratios across five fiscal years.
--The project shows how each company’s ratio values change over time rather than focusing on only one year.
--Using both current ratio and quick ratio gives a clearer view of short-term liquidity.
--Profitability is captured from different angles through net profit margin, ROA, and ROE.
--Visualising the ratios with line charts makes it easier to compare trends between the two companies.
-
+- A direct comparison of both companies using the same set of liquidity and profitability ratios across five fiscal years.
+- Year-over-year trend visualisations for each ratio, showing how each company's performance changes over time.
+- Line charts that make it easy to compare trends between two companies within the same industry.
 ## 5. How to run
 - Make sure you have access to WRDS and a valid WRDS username.
 - Open the notebook file:notebook.ipynb
@@ -69,16 +68,13 @@ This project compares the financial performance of Walmart and Costco from 2020 
 - The final output table will be saved as:financial_ratios_full_table.xlsx
 - The charts will be displayed in the notebook.
 
-## 6.Product link / Demo
-[Link](https://pan.baidu.com/s/1Cl1WSQh0VJnmPTAg-pJdXQ?pwd=1234)
-
-## 7.Limitations & next steps
-  ### 7.1  Limitations 
-- This project only compares two companies, so the results should not be treated as a full industry analysis.
+## 6.Limitations & next steps
+### 6.1  Limitations 
+- This demonstration only applies the tool to two companies, so the results should not be treated as a full industry analysis.
 - The analysis uses only five years of annual data, which gives a limited time horizon.
 - Only a small set of financial ratios is included; other indicators such as debt ratios or efficiency ratios could also be added.
 - The project focuses on descriptive comparison and does not apply statistical testing or forecasting methods.
-  ### 7.2 Possible next steps
+ ### 6.2 Possible next steps
 - include more financial ratios
 - create subplots to show all ratios in one figure
 
